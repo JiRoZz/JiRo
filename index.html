@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JiRo Online Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Online Store</h1>
+    <p>Find the best deals on amazing products</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#products">Products</a>
+    <a href="#cart">Cart (<span id="cart-count">0</span>)</a>
+  </nav>
+
+  <!-- Product Section -->
+  <section id="products" class="container">
+    <h2>Our Products</h2>
+    <div class="product-list">
+      <div class="product">
+        <img src="https://i.pinimg.com/236x/86/ec/16/86ec16df99ba170370142d8357298052.jpg" alt="Product 1">
+        <h3>Black T-Shrit</h3>
+        <p>$25.00</p>
+        <button class="add-to-cart" data-name="Product 1" data-price="25">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://i.pinimg.com/236x/a6/45/db/a645db1c8d21954b3e872969e5332a56.jpg" alt="Product 2">
+        <h3>Brown T-Shirt</h3>
+        <p>$40.00</p>
+        <button class="add-to-cart" data-name="Product 2" data-price="40">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://i.pinimg.com/236x/d0/66/0b/d0660bcaa06e59504f0a0cb5a7e0c65d.jpg" alt="Product 3">
+        <h3>Back</h3>
+        <p>$30.00</p>
+        <button class="add-to-cart" data-name="Product 3" data-price="30">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Section -->
+  <section id="cart" class="container">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p><strong>Total: $<span id="total-price">0</span></strong></p>
+    <a href="https://t.me/darozz07"><button id="checkout">Checkout</button></a>
+  </section>
+
+  <script src="java.js"></script>
+</body>
+</html>
